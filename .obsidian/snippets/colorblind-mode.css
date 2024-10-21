@@ -1,0 +1,253 @@
+/* Colorblind Mode for Obsidian */
+
+
+
+
+/* General color adjustments */
+.theme-light {
+  --background-primary: #f0f0f0;
+  --background-secondary: #e0e0e0;
+  --background-secondary-alt: #d0d0d0;
+  --text-normal: #000000;
+  --text-muted: #555555;
+  --text-faint: #999999;
+  --interactive-normal: #5a5a5a;
+  --interactive-hover: #7a7a7a;
+  --interactive-accent: #0000FF; /* Blue, easily distinguishable for most types of color blindness */
+  --interactive-accent-hover: #000080; /* Darker blue */
+  --scrollbar-bg: #cccccc;
+  --scrollbar-thumb-bg: #999999;
+}
+
+.theme-dark {
+  --background-primary: #202020;
+  --background-secondary: #303030;
+  --background-secondary-alt: #404040;
+  --text-normal: #FFFFFF;
+  --text-muted: #AAAAAA;
+  --text-faint: #666666;
+  --interactive-normal: #a0a0a0;
+  --interactive-hover: #c0c0c0;
+  --interactive-accent: #00FFFF; /* Cyan, stands out in dark mode */
+  --interactive-accent-hover: #008080; /* Darker cyan */
+  --scrollbar-bg: #333333;
+  --scrollbar-thumb-bg: #666666;
+}
+
+/* Adjusting specific elements */
+.nav-file-title,
+.nav-folder-title,
+.search-result-file-title,
+.search-result-file-matches {
+  color: var(--text-normal);
+}
+
+.nav-file-title-content:hover,
+.nav-folder-title-content:hover,
+.search-result-file-title:hover,
+.search-result-file-match:hover {
+  color: var(--interactive-accent);
+}
+
+/* Adjust link colors */
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link {
+  color: var(--interactive-accent);
+}
+
+a:hover,
+.internal-link:hover,
+.cm-hmd-internal-link:hover,
+.cm-link:hover {
+  color: var(--interactive-accent-hover);
+}
+
+/* Adjust headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--interactive-accent);
+}
+
+/* Adjust code blocks */
+code,
+.cm-inline-code {
+  background-color: var(--background-secondary);
+  color: var(--interactive-accent);
+}
+
+/* Adjust blockquotes */
+blockquote,
+.markdown-preview-view blockquote {
+  border-left-color: var(--interactive-accent);
+  color: var(--text-muted);
+}
+
+/* Adjust checkbox colors */
+input[type=checkbox] {
+  border-color: var(--text-muted);
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* Adjust tag colors */
+a.tag {
+  background-color: var(--background-secondary-alt);
+  color: var(--text-muted);
+}
+
+a.tag:hover {
+  background-color: var(--interactive-accent);
+  color: var(--text-normal);
+}
+
+/* Adjust graph view colors */
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--interactive-accent) !important;
+}
+
+.graph-view.color-text {
+  color: var(--text-normal) !important;
+}
+
+.graph-view.color-line {
+  color: var(--text-muted) !important;
+}
+
+.graph-view.color-fill {
+  color: var(--background-secondary);
+}
+
+/* Adjust search highlight */
+.search-result-file-matched-text {
+  background-color: var(--interactive-accent);
+  color: var(--text-normal);
+}
+
+/* Adjust settings */
+.modal-bg {
+  background-color: var(--background-secondary-alt);
+}
+
+.modal {
+  background-color: var(--background-primary);
+  border: 1px solid var(--interactive-accent);
+}
+
+/* Adjust Mermaid diagrams */
+.mermaid .label {
+  color: var(--text-normal);
+}
+
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon {
+  fill: var(--background-secondary);
+  stroke: var(--interactive-accent);
+}
+
+.edgePath .path {
+  stroke: var(--interactive-accent);
+}
+
+/* Adjust scrollbars */
+::-webkit-scrollbar {
+  background-color: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+}
+
+/* Colorblind Mode for Obsidian */
+
+/* (Previous CSS code remains the same) */
+
+/* Adjust .sc-message-container */
+.sc-message-container {
+  border: 2px solid var(--interactive-accent);
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--background-secondary);
+  padding: 10px;
+}
+
+.theme-light .sc-message-container {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .sc-message-container {
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Add hover effect for better interaction feedback */
+.sc-message-container:hover {
+  border-color: var(--interactive-accent-hover);
+  background-color: var(--background-secondary-alt);
+}
+
+/* Ensure text inside the container is readable */
+.sc-message-container * {
+  color: var(--text-normal);
+}
+
+/* Style scrollbar for the container */
+.sc-message-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sc-message-container::-webkit-scrollbar-thumb {
+  background-color: var(--interactive-accent);
+  border-radius: 4px;
+}
+
+.sc-message-container::-webkit-scrollbar-track {
+  background-color: var(--background-secondary-alt);
+  border-radius: 4px;
+}
+
+/* Colorblind Mode for Obsidian */
+
+/* (Previous CSS code remains the same) */
+
+/* Color adjustments for .sc-top-bar-container and its children */
+.sc-top-bar-container {
+  background-color: var(--background-secondary-alt);
+}
+
+.sc-top-bar-container .sc-chat-name-input {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  border-color: var(--interactive-accent);
+}
+
+.sc-top-bar-container .sc-chat-name-input:focus {
+  border-color: var(--interactive-accent-hover);
+}
+
+/* Color adjustments for buttons in the top bar, if any */
+.sc-top-bar-container button {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.sc-top-bar-container button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+/* Ensure text contrast */
+.sc-top-bar-container * {
+  color: var(--text-normal);
+}

@@ -1,0 +1,1 @@
+Excited about my final year teaching. Hope to make it memorable. 40 fresh faces in my classroom today, eager to dive into Shakespeare and Austen. It's bittersweet knowing this is my last first day, but I'm determined to make every lesson count. Retirement looms, but for now, I'll savor every moment with my students.

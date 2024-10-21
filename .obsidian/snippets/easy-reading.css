@@ -1,0 +1,58 @@
+.sc-message {
+    max-width: 90ch;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1.5rem;
+    font-size: 1.4rem !important; /* 增大字体大小 */
+    word-break: break-word;
+  
+    &.user {
+      align-self: flex-end;
+      color: var(--text-normal);
+      background-color: var(--background-primary);
+    }
+    
+    &.assistant, &.system {
+      background-color: var(--background-primary-alt);
+      color: var(--text-normal);
+    }
+  }
+
+  .sc-message-content {
+    margin: 0;
+    padding: 1rem;
+    line-height: 0;
+    > * p {
+      margin: 0;
+      line-height: 1.8; /* 可选：针对段落内文字的行高 */
+    }
+  }
+
+  .sc-chat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    user-select: text;
+  }
+
+
+  .sc-chat-input {
+    flex-grow: 1;
+    padding: 0.88rem;
+    border: none;
+    border-radius: 1.5rem;
+    resize: none;
+    height: auto;
+    min-height: 4.2lh;
+    max-height: 100%;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    margin-right: -2.7rem;
+    padding-right: 3rem;
+    font-size: 1.2rem !important; /* 增大字体大小 */
+  }
